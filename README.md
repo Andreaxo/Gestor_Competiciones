@@ -1,9 +1,9 @@
-# React + Vite
+# Módulo Usuarios - Actualizado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El código tiene todos los módulos de habilidades y competiciones.
 
-Currently, two official plugins are available:
+<h3>Actualizaciones</h3>
+Se añadió estilos a los expertos y se acomodo también la visibilidad de los usuarios en las tablas.
+Añadiendo los estilos de aspirantes, y competidores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Front-End-Beta-V.4
+
