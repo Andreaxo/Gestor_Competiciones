@@ -8,7 +8,6 @@
 }
 
 .banner__container::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -20,20 +19,16 @@
     background-repeat: no-repeat;
     filter: blur(8px);
     opacity: 1; 
-    z-index: -1; 
 }
 
 .banner__perspective--text {
     perspective: 980px;
     display: grid;
-    place-content: center;
-    place-self: center;
-
+    margin-top: -100px;
 }
 
 #banner__container--title {
     font-weight: var(--font-weight-title);
-    place-self: center;
     font-size: 4rem;
     color: var(--color-black);
     transform: rotateX(36deg);
@@ -42,7 +37,6 @@
     animation: moveTitleBanner 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-top: -400px;
 
 }
 

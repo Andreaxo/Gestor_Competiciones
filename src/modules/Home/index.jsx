@@ -6,6 +6,7 @@ import AboutUs from './AboutUs';
 import Divider from './Divider';
 import Roadmap from './Roadmap';
 import Footer from '../Footer';
+import './index.css';
 
 function Home() {
     return (

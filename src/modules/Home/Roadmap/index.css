@@ -1,7 +1,6 @@
 .roadmap{
     width: 100vw;
     background-repeat: no-repeat;
-    margin-top: -17rem;
 }
 .decorationn{
     width: 20rem;
@@ -15,19 +14,20 @@
     
 }
 .decorationn1{
+    position:absolute;
+    margin-top: 16rem;
     width: 20rem;
-    top: 200px;
-    left: -100px;
     filter: blur(8px);
     animation: decorationMove1 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    z-index: 1;
+    z-index: 100;
 }
 .decorationn2{
+    position: absolute;
     width: 14rem;
-    left: 200px;
-    top: 500px;
+    right: 0;
+    margin-top: 20rem;
     filter: blur(3px);
     animation: decorationMove2 30s;
     animation-iteration-count: infinite;
@@ -58,32 +58,20 @@
 @keyframes decorationMove2 {
     0%{
         transform: rotateZ(180deg);
-        top: 300px;
-        left: 70vw;
     }
     25%{
         transform: rotateZ(195deg);
-        top: 330px;
-        left: 68vw;
     }
     35%{
         transform: rotateZ(190deg);
-        top: 310px;
-        left: 66vw;
     }
     55%{
         transform: rotateZ(186deg);
-        top: 290px;
-        left:66vw;
     }
     75%{
         transform: rotateZ(183deg);
-        top: 290px;
-        left: 68vw;
     }
     100%{
         transform: rotateZ(180deg);
-        top: 300px;
-        left: 70vw;
     }
 }

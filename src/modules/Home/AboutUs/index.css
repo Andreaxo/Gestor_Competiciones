@@ -1,11 +1,12 @@
-#container{
+#aboutus__container{
     margin-top: 6rem;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 20% 35%;
+    grid-template-columns: 20% 30%;
     place-content: center;
     gap: 3rem;
 }
-#container1{
+#aboutus__container1{
     border: 1px solid var(--color-green);
     text-align: center;
     align-content: center;
@@ -13,20 +14,21 @@
     border-radius: 2rem;
     background: linear-gradient(135deg, var(--color-green) 0%, var(--color-dark-green) 70%);
 }
-#container1 img{
+#aboutus__container1 img{
     width: 9rem;
 }
 
-#container2{
+#aboutus__container2{
     border: 1px solid var(--color-black);
     align-content: center;
     padding-left: 30px;
     padding-right: 30px;
     height: 16rem;
     border-radius: 2rem;
+    text-align: left;
     background: linear-gradient(150deg, var(--color-white) 40%, var(--color-green) 100%);
 }
-#container2 p{
+#aboutus__container2 p{
     font-weight: var(--font-weight-text);
     margin-top: 1rem;
 }

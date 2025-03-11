@@ -1,11 +1,10 @@
-.container {
+.divider__container {
     display: flex;
     align-items: center;
-    overflow: hidden;
     margin-top: 4rem;
   }
   
-  .scroll {
+  .divider__scroll {
     white-space: nowrap;
     background-color: var(--color-dark-gray);
     height: 1.5rem;
@@ -13,13 +12,13 @@
     place-items: center;
   }
   
-  .scroll div {
+  .divider__scroll div {
     display: flex;
     gap: 2em;
     
   }
   
-  .scroll p {
+  .divider__scroll p {
     font-size: 1rem;
     color: rgb(255, 255, 255);
     font-weight: var(--font-weight-text);
@@ -30,7 +29,7 @@
 
   }
   
-  .RightToLeft {
+  .divider__RightToLeft {
     animation: RightToLeft 30s infinite linear;
   }
   

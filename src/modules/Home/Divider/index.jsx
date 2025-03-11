@@ -4,9 +4,9 @@ import './index.css';
 const Divider = () => {
     return (
         <>
-        <div class="container">
-    <div class="scroll">
-      <div class="RightToLeft">
+        <div className="divider__container">
+    <div className="divider__scroll">
+      <div className="divider__RightToLeft">
         <p>· Desarrollo de software       ·       Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral     ·     Desarrollo de software     ·     Mujeres digitales     ·     Desarrollo libre     ·     Desarrollo integral</p>
       </div>
     </div>

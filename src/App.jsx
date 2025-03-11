@@ -25,7 +25,6 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<LogIn />} />
-        <Route path="/elegirCompeticion" element={<ShowCompetitions/>} />
         {/* Rutas principales */}
         <Route path="/listadoExpertos" element={<ListadoExpertos />} />
         <Route path="/listadoAprendiz" element={<ListadoAprendiz />} />
