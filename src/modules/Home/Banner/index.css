@@ -37,9 +37,7 @@
     animation: moveTitleBanner 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
 }
-
 @keyframes moveTitleBanner {
     0%{
         transform: rotateX(36deg);
