@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./index.css";
 import figure1 from "../img/figure2.png";
+import { useNavigate } from 'react-router-dom';
 
 function QuieroCompetir() {
-  
+  const navigate = useNavigate();
   const [ formData, setFormData ] = useState({
     name: "",
     lastname: "",
@@ -58,7 +59,7 @@ function QuieroCompetir() {
         alt="imagen decorativa"
       />
       <div className="formulario__container--formulario">
-        <a href="#">&lt; Volver al Home</a>
+        <a onClick={()=> navigate("/")} id="login__backhome">&lt; Volver al Home</a>
         <h1>Envía tu solicitud</h1>
         <form onSubmit={handleSubmit}>
           <div className="formulario__division1 formulario__division">
@@ -195,7 +196,7 @@ function QuieroCompetir() {
             <button className="formulario__container-submit btn1" type="submit">
               Enviar solicitud
             </button>
-            <h2>Cada aprendiz solo puede enviar una solicitud por competencia</h2>
+            <h2 className="formulario__disclaimer">Cada aprendiz solo puede enviar una solicitud por competencia</h2>
           </div>
           <div className="formulario_division2 formulario__division">
             <div className="formulario__container--labelsubcontainer">
@@ -223,8 +224,8 @@ function QuieroCompetir() {
           </div>
         </form>
       </div>
-      <div className="banner__perspective--text">
-        <h1 id="banner__container--title">
+      <div className="banner__perspective--text-3">
+        <h1 id="banner__container--title-3">
           Impulsa<br />tu talento
         </h1>
       </div>

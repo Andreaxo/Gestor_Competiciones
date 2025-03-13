@@ -147,6 +147,62 @@ export const ListadoCompetidor = () => {
             {isModalView && <div ref={competidorSectionRef}><VerCompetidor onClose={() => setIsModalView(false)} expertData={selectedCompetitor} /></div>}
 
         </div>
+        <div className="competitors-listing-container">
+            <div className="action-header">
+                <h2 className="main-title">Todos los competidores</h2>
+                <h3 className="subtitle-text">Escoge una habilidad</h3>
+            </div>
+            <Table 
+                dataSource={dataSource} 
+                columns={columns} 
+                loading={loading}
+                
+                pagination={{
+                    pageSize: 10,
+                    showTotal: (total, range) => 
+                        `${range[0]}-${range[1]} de ${total} competidores`,
+                }}
+                scroll={{ x: true }}
+                style={{ boxShadow: 'rgba(48, 48, 170, 0.2) 0px 7px 29px 0px',
+                    margin: '0',
+                    borderRadius: '10px',
+                    
+                }}
+                rowClassName="ant-table-row"
+            ></Table>
+            {isModalOpen && <div ref={competidorSectionRef}><CrearAprendiz onClose={() => setIsModalOpen(false)} /></div>}
+            {isModalOpenEdit && <div ref={competidorSectionRef}><ModificarCompetidor onClose={() => setIsModalOpenEdit(false)} expertData={selectedAprendiz} /></div>}
+            {isModalView && <div ref={competidorSectionRef}><VerCompetidor onClose={() => setIsModalView(false)} expertData={selectedCompetitor} /></div>}
+
+        </div>
+        <div className="competitors-listing-container">
+            <div className="action-header">
+                <h2 className="main-title">Todos los competidores</h2>
+                <h3 className="subtitle-text">Escoge una habilidad</h3>
+            </div>
+            <Table 
+                dataSource={dataSource} 
+                columns={columns} 
+                loading={loading}
+                
+                pagination={{
+                    pageSize: 10,
+                    showTotal: (total, range) => 
+                        `${range[0]}-${range[1]} de ${total} competidores`,
+                }}
+                scroll={{ x: true }}
+                style={{ boxShadow: 'rgba(48, 48, 170, 0.2) 0px 7px 29px 0px',
+                    margin: '0',
+                    borderRadius: '10px',
+                    
+                }}
+                rowClassName="ant-table-row"
+            ></Table>
+            {isModalOpen && <div ref={competidorSectionRef}><CrearAprendiz onClose={() => setIsModalOpen(false)} /></div>}
+            {isModalOpenEdit && <div ref={competidorSectionRef}><ModificarCompetidor onClose={() => setIsModalOpenEdit(false)} expertData={selectedAprendiz} /></div>}
+            {isModalView && <div ref={competidorSectionRef}><VerCompetidor onClose={() => setIsModalView(false)} expertData={selectedCompetitor} /></div>}
+
+        </div>
         </>
     );
 };

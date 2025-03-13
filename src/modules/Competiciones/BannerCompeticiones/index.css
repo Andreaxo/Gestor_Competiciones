@@ -1,4 +1,4 @@
-#banner__container {
+#competiciones__banner--container {
     display: grid;
     width: 100vw;
     height: 50vh;
@@ -7,7 +7,7 @@
     position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
 }
 
-.banner__container::before {
+.competiciones__banner--container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@
     z-index: -1; 
 }
 
-.banner__perspective--text {
+.banner__perspective--text-2 {
     perspective: 980px;
     display: grid;
     place-content: center;

@@ -10,6 +10,8 @@ import ShowCompetitions from './modules/competitions/showCompetitions';
 import DetailSkill from './modules/skills/detailsSkill';
 import ExitSystem from './modules/menus/singOut';
 import LogIn from './modules/LogIn/index';
+import QuieroCompetir from './modules/QuieroCompetir/index';
+import Competiciones from './modules/Competiciones/index';
 
 /* Import componentes de usuarios */
 import { ListadoExpertos } from "./components/expertos/ListadoExpertos";
@@ -25,6 +27,9 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<LogIn />} />
+        <Route path="/elegirCompeticion" element={<ShowCompetitions />} />
+        <Route path="/Inscribirse" element={<QuieroCompetir />} />
+        <Route path="/competiciones" element={<Competiciones />} />
         {/* Rutas principales */}
         <Route path="/listadoExpertos" element={<ListadoExpertos />} />
         <Route path="/listadoAprendiz" element={<ListadoAprendiz />} />

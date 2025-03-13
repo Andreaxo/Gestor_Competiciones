@@ -161,5 +161,5 @@ body::-webkit-scrollbar {
 
 #menu__container{
     position: sticky;
-    top: 0;
+    top: 0; 
 }

@@ -24,7 +24,7 @@
 .banner__perspective--text {
     perspective: 980px;
     display: grid;
-    margin-top: -100px;
+    margin-top: -230px;
 }
 
 #banner__container--title {

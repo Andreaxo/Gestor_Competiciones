@@ -20,9 +20,9 @@ function Header() {
       <div className="center-container">
         <nav>
           <ul className="menu">
-            <li><button className="menu-btn">Inicio</button></li>
-            <li><button className="menu-btn">Competiciones</button></li>
-            <li><button className="menu-btn menu-btn1">Quiero Competir</button></li>
+            <li><button className="menu-btn" onClick={()=> navigate("/")}>Inicio</button></li>
+            <li><button className="menu-btn" onClick={()=> navigate("/competiciones")}>Competiciones</button></li>
+            <li><button className="menu-btn menu-btn1" onClick={()=> navigate("/inscribirse")}>Quiero Competir</button></li>
             <li><button className="menu-btn menu-btn2" onClick={()=> navigateToLog()} >Ingresar</button></li>
           </ul>
         </nav>

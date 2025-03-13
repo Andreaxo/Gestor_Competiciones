@@ -18,7 +18,7 @@ function LogIn(){
                 <img src={figure1} className="login__container--figure1" alt="imagen de figura decorativa" />
                 <img src={figure1} className="login__container--figure2" alt="imagen de figura decorativa" />
                 <div className='login__container--login'>
-                    <a href="#">{backHome}</a>
+                    <a onClick={()=> navigate("/")} id="login__backhome">{backHome}</a>
                     <h1>Ingresar al Sistema</h1>
                     <div className='login__container--labelsubcontainer standard-input-container'>
                         <label htmlFor="#">Correo electrónico</label>

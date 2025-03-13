@@ -10,10 +10,7 @@
     overflow-x: hidden;
     box-shadow: 0 -50px 60px #38a90063;
 }
-body {
-    margin: 0;
-    overflow-x: hidden;
-  }
+
 .decoration{
     position: absolute;
     -moz-user-select: none;
@@ -66,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     margin-top: -260px;
     position: relative;
     z-index: 10;
@@ -100,6 +97,10 @@ body {
     position: relative;
     z-index: 10;
     display: grid;
+    width: 100vw;
+    gap: 20px;
+    padding: 100px;
+    box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(16rem,1fr));
     
 }

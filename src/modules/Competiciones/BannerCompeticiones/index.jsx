@@ -7,9 +7,9 @@ function BannerCompeticiones() {
   
     return (
   <>
-    <div id="banner__container">
+    <div id="competiciones__banner--container">
         <Header />
-        <div className='banner__perspective--text'>
+        <div className='banner__perspective--text-2'>
             <h1 id="banner__container--title">Competiciones</h1>
         </div>
         <img src={figure1} alt="decoration 1" className='decoration1 decoration'/>
