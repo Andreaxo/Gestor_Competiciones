@@ -145,6 +145,7 @@ export const ListadoCompetidor = () => {
             {isModalOpen && <div ref={competidorSectionRef}><CrearAprendiz onClose={() => setIsModalOpen(false)} /></div>}
             {isModalOpenEdit && <div ref={competidorSectionRef}><ModificarCompetidor onClose={() => setIsModalOpenEdit(false)} expertData={selectedAprendiz} /></div>}
             {isModalView && <div ref={competidorSectionRef}><VerCompetidor onClose={() => setIsModalView(false)} expertData={selectedCompetitor} /></div>}
+
         </div>
         </>
     );
