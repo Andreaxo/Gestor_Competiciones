@@ -1,0 +1,16 @@
+
+
+
+
+
+.upload__container_inputs-text{
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.upload__container_inputs-text>:nth-child(3){
+    height: 5rem;
+}

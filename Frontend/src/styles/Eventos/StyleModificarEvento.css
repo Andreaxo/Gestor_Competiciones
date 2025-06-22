@@ -1,0 +1,54 @@
+
+
+
+.btn-modificar-evento{
+    padding: 0.75rem 1.5rem;
+    border: solid 1px var(--color-black);
+    border-radius: 1rem;
+    color: var(--color-black);
+    background-color: var(--color-green);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    gap: 0.5rem;
+}
+
+.btn-cancelar-evento{
+    padding: 0.75rem 1.5rem;
+    border: solid 1px var(--color-black);
+    border-radius: 1rem;
+    color: var(--color-black);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    gap: 0.5rem;
+}
+
+/* Quitar hover de los botones */
+.btn-modificar-evento,
+.btn-cancelar-evento {
+    transition: none !important;
+}
+
+.btn-modificar-evento:hover,
+.btn-cancelar-evento:hover,
+.btn-modificar-evento:focus,
+.btn-cancelar-evento:focus,
+.btn-modificar-evento:active,
+.btn-cancelar-evento:active {
+    background-color: inherit !important;
+    border-color: inherit !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+/* Quitar hover de los inputs y formularios */
+.form-modificar-evento .ant-input:hover,
+.form-modificar-evento .ant-input:focus,
+.form-modificar-evento .ant-input:active,
+.form-modificar-evento .ant-picker:hover,
+.form-modificar-evento .ant-picker:focus,
+.form-modificar-evento .ant-picker:active {
+    border-color: inherit !important;
+    box-shadow: none !important;
+}

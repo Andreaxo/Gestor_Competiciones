@@ -1,0 +1,84 @@
+#slidercompeticiones{
+    height:40vh;
+    width: 120vw;
+    margin-left: -10vw;
+    background-color: white;
+    position: relative;
+    top: -10vh;
+    filter: blur(8px);
+    border-radius: 120%;
+    overflow-x: hidden;
+    box-shadow: 0 -50px 60px #38a90063;
+}
+
+.decoration{
+    position: absolute;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none; 
+}
+.decoration3{
+    width: 15rem;
+    transform: rotateZ(0deg);
+    position: absolute;
+    top: 200px;
+    right: -4vw;
+    animation: decorationMove3 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes decorationMove3 {
+    0%{
+        transform: rotateZ(0deg);
+        top: 200px;
+    }
+    25%{
+        transform: rotateZ(-15deg);
+        top: 230px;
+    }
+    35%{
+        transform: rotateZ(-20deg);
+        top: 210px;
+    }
+    55%{
+        transform: rotateZ(-30deg);
+        top: 190px;
+    }
+    75%{
+        transform: rotateZ(-15deg);
+        top: 190px;
+    }
+    100%{
+        transform: rotateZ(0deg);
+        top: 200px;
+    }
+}
+
+  .slidercompeticiones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: -360px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .slidercompeticiones-subcontainer {
+    display: flex;
+    gap: 10px; /* Espacio entre el select y el input */
+    align-items: center;
+    padding: 40px;
+  }
+  
+ 
+  
+.slidercompeticiones-skills{
+    position: relative;
+    z-index: 10;
+    width: 100%;  
+}
+

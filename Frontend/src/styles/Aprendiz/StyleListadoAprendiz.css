@@ -1,0 +1,21 @@
+
+
+.action-header-aprendiz{
+    background-color: black;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    width: 20rem;
+}
+
+.action-buttons-aprendiz{
+    display: flex;
+    justify-content: left;
+    margin: 1rem 2rem 1rem 4rem;
+
+}

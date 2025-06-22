@@ -1,0 +1,148 @@
+
+.documents__window{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.documents__container{
+    width: 60%;
+    height: 80%;
+border: solid 1px black;
+border-radius: 1rem;
+padding: 3rem;
+}
+
+
+.documents__window-skills{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 10%;
+    top: 10%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
+.documents__container-back{
+    display: flex;
+    justify-content: start;
+}
+
+
+.details__window__flotant-titles-back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details__window__flotant-titles-back{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.details__window__flotant-titles-back:hover{
+    transform: scale(1.02);
+}
+
+
+
+
+.documents__container-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.documents__container-titles>h1{
+    font-size: clamp(1.5rem,3vw,4rem);
+}
+
+.documents__container_box-header{
+    font-size: clamp(0.8rem,0.5vw,1rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+padding: 1rem;
+}
+
+
+.documents__container__item{
+    font-size: clamp(0.8rem,0.5vw,1rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
+
+
+.documents__container__item{
+margin: 1rem;
+padding: 1rem;
+border-radius: 1rem;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.212);
+align-items: center;
+}
+
+
+.documents__container__item-icons>button{
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.2s;
+}
+
+.documents__container__item-icons>button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.documents__container__item-icons-upload{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.documents__container__item-icons-delete{
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+.documents__container__item-add{
+    background-color: var(--color-green);
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s;
+}
+
+.documents__container__item-add:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+
+@media screen and (max-width: 768px) {
+    .documents__container{
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+
+}

@@ -1,0 +1,63 @@
+#footer-container{
+    width: 100vw;
+    height: auto;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 14% 25% 25% 25% ;
+    justify-content: center;
+    text-align: left;
+    background-color: var(--color-black);
+    box-sizing: border-box;
+    gap: 2rem;
+    overflow-x: hidden;
+}
+
+#footer-logo{
+    width: 8rem;
+    display: grid;
+    align-self: center;
+}
+
+.footer-talentoRisaralda, .footer-competiciones, .footer-redesSociales{
+    color: var(--color-green);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-talentoRisaralda a, .footer-competiciones a, .footer-redesSociales a{
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+}
+@media (max-width: 820px) {
+#footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #footer-logo{
+        width: 3rem;
+        justify-self: center;
+    }
+    .footer-talentoRisaralda, .footer-competiciones, .footer-redesSociales {
+        display: none;
+    }
+}
+ @media (max-width: 550px) {
+    #footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    #footer-logo{
+        width: 3rem;
+        justify-self: center;
+    }
+    .footer-talentoRisaralda, .footer-competiciones, .footer-redesSociales {
+        display: none;
+    }
+ }

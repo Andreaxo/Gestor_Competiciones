@@ -1,0 +1,110 @@
+
+
+.publicCompetitionsDetails__box {
+  position: fixed;
+  top: 50%;
+  /* arrancamos fuera de pantalla a la derecha */
+  left: 100%;
+  /* el centrado vertical y horizontal permanece siempre */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-sizing: border-box;
+  padding: 5rem 3rem 3rem;
+  width: 60%;
+  background: white;
+  border: 1px solid black;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+  /* animamos solo la propiedad `left` */
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  to {
+    /* al final de la animación, lo colocamos en el 50% (centro) */
+    left: 50%;
+  }
+}
+
+
+.publicCompetitionsDetails__box-image{
+    height: 14rem;
+    width: 14rem;
+}
+
+.publicCompetitionsDetails__box-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+}
+
+.publicCompetitionsDetails__box-content>:nth-child(3){
+    width: 100%;
+}
+
+
+.publicCompetitionsDetails__box-content>a{
+    width: 95%;
+    text-align: left;
+
+}
+
+
+
+
+
+.publicCompetitionsDetails__box-content>a{
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+      .slidercompeticiones-container {
+    margin-top: -200px;
+  }
+}
+@media screen and (max-width: 758px) {
+
+  .publicCompetitionsDetails__box {
+    all: unset;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;          
+    left: 50%;           
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 60vw;        
+    height: 70vh;    
+    background-color: #fff;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 1px solid black;
+    border-radius: var(--border-radius-box);
+    animation: slideInFromRight 0.5s ease-out forwards;
+    overflow: auto;
+  }    
+
+
+    .publicCompetitionsDetails__box-image{
+        height: 50vh;
+        width: 50vw;
+    }
+    
+
+}

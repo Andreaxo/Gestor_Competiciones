@@ -1,0 +1,120 @@
+.private-details__window__flotant{
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    padding: 0 3% 5% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 3rem 0 0 3rem;
+    transform: translateX(-40%);
+    animation: slideInFromRight 0.5s ease-out forwards;
+    z-index: 1;
+}
+
+.private-actions-container{
+    display: flex;
+     gap: 1rem;
+}
+
+.private-details__window__flotant-box{
+    padding: 2rem;
+    width: 90%;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.212);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: scroll;
+}
+
+.private-details__window__flotant-titles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.private-details__window__flotant-titles>h1{
+    font-size: 2.5rem;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.private-details__window__flotant-titles>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.private-details__window__flotant-titles>a{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.private-details__window__flotant-titles>a:hover{
+    transform: scale(1.02);
+}
+
+.private-details__window__flotant-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.private-details__window__flotant-participants{
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.private-details__window__flotant-item-competitors{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.private-details__window__flotant-participants-competitor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.private-details__window__flotant-participants-competitor>:nth-child(1){
+    width: 10rem;
+}
+
+.private-details__window__flotant-participants-competitor>:nth-child(2){
+    width: 20rem;
+}
+
+.private-details__window__flotant-participants-competitor>:nth-child(3){
+    width: 10rem;
+}
+
+.private-details__window__flotant-participants-competitor-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s;
+}
+
+.private-details__window__flotant-participants-competitor-button:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+}

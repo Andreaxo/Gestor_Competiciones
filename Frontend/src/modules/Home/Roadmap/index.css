@@ -1,0 +1,105 @@
+.roadmap{
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+.decorationn{
+    width: 20rem;
+    position: relative;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+    
+}
+.decorationn1{
+    position:absolute;
+    margin-top: 16rem;
+    width: 20rem;
+    filter: blur(8px);
+    animation: decorationMove1 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 100;
+}
+.decorationn2{
+    position: absolute;
+    width: 14rem;
+    right: 0;
+    margin-top: 20rem;
+    filter: blur(3px);
+    animation: decorationMove2 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+
+}
+.roadmap2{
+        display:none
+    }
+@keyframes decorationMove1 {
+    0%{
+        transform: rotateZ(-90deg);
+    }
+    25%{
+        transform: rotateZ(-105deg);
+    }
+    35%{
+        transform: rotateZ(-95deg);
+    }
+    55%{
+        transform: rotateZ(-85deg);
+    }
+    75%{
+        transform: rotateZ(-75deg);
+    }
+    100%{
+        transform: rotateZ(-90deg);
+    }
+}
+@keyframes decorationMove2 {
+    0%{
+        transform: rotateZ(180deg);
+    }
+    25%{
+        transform: rotateZ(195deg);
+    }
+    35%{
+        transform: rotateZ(190deg);
+    }
+    55%{
+        transform: rotateZ(186deg);
+    }
+    75%{
+        transform: rotateZ(183deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .roadmap2{
+        display:inline
+    }
+    .roadmap3{
+        display: none;
+    }
+    .decorationn{
+        display: none;
+    }
+}
+
+  @media (max-width: 550px) {
+    .roadmap2{
+        display:inline
+    }
+    .roadmap3{
+        display: none;
+    }
+    .decorationn{
+        display: none;
+    }
+
+}

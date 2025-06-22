@@ -1,0 +1,76 @@
+.divider__container {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  .divider__scroll {
+    white-space: nowrap;
+    background-color: var(--color-dark-gray);
+    height: 1.5rem;
+    display: flex;
+    place-items: center;
+    width: 100vw;
+  }
+  
+  .divider__scroll div {
+    display: flex;
+    gap: 2em;
+    
+  }
+  
+  .divider__scroll p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: var(--font-weight-text);
+    margin-bottom: 0;
+    line-height: 10px;
+    letter-spacing: 0;
+    color: var(--color-black)
+
+  }
+  
+  .divider__RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ @media (min-width: 768px) and (max-width: 1024px){
+    .divider__scroll{
+      width: 100vw;
+      overflow: hidden;
+      
+    }
+    .divider__scroll p{
+      font-size: 0.8rem;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body{
+      overflow-x: hidden !important;
+    }
+}
+@media (max-width: 768px){
+    .divider__scroll{
+      width: 100vw;
+      overflow: hidden;
+      
+    }
+    .divider__scroll p{
+      font-size: 0.8rem;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    body{
+      overflow-x: hidden !important;
+    }
+}

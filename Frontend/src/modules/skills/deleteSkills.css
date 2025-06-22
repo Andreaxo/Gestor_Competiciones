@@ -1,0 +1,51 @@
+.private-deleteSkills__flotant__window {
+    all: unset;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    z-index: 9999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.private-deleteSkills__flotant__window>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 2rem;
+    border: solid 2px black;
+    background-color: white;
+}
+
+.private-deleteSkills__flotant__window>div>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.private-deleteSkills__flotant__window__box>div>button:nth-of-type(1){
+    border: solid 2px red;
+}
+
+@media screen and (max-width: 758px) {
+    .private-deleteSkills__flotant__window>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 90vw;
+        height: 30vh;
+        border-radius: 2rem;
+        border: solid 2px black;
+        background-color: white;
+    }
+}

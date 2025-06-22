@@ -1,0 +1,17 @@
+.error {
+    border: 2px solid #ff4444 !important;
+    background-color: #fff5f5;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.create__flotant__window div {
+    position: relative;
+    margin-bottom: 20px;
+}

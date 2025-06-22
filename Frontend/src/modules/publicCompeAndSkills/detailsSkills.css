@@ -1,0 +1,95 @@
+/* detailsSkills.css */
+
+/* 1) Cuando el modal esté abierto, el <body> no hace scroll */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* 2) Contenedor overlay del modal: cubre toda la pantalla con blur */
+.publicDetails__window__flotant {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;            /* ancho completo */
+  height: 100vh;           /* alto completo */
+  backdrop-filter: blur(6px);      /* desenfoca el contenido de abajo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;           /* encima de todo lo demás */
+}
+
+/* 3) Caja interna del modal */
+.details__window__flotant-box {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;        /* si el contenido excede, scroll dentro de la caja */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 4) Encabezado del modal */
+.publicDetails__window__flotant-titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.publicDetails__window__flotant-titles h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000;
+}
+.publicDetails__window__flotant-titles .btn-close {
+  text-decoration: none;
+  color: var(--color-black);           /* color de ejemplo */
+  font-weight: var(--font-weight-subtitle);
+  cursor: pointer;
+}
+
+/* 5) Cada ítem de detalle */
+.details__window__flotant-item {
+  margin-bottom: 1.5rem;
+}
+.details__window__flotant-item:last-child {
+  margin-bottom: 0;
+}
+.details__window__flotant-item-title {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+.details__window__flotant-item-text {
+  margin: 0.25rem 0 0.75rem;
+  color: #555;
+  line-height: 1.4;
+  text-align: justify;
+}
+.details__window__flotant-participants {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* 6) Adaptación responsiva */
+@media screen and (max-width: 758px) {
+  .publicDetails__window__flotant {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .details__window__flotant-box {
+    border-radius: 0;
+    width: 80%;
+    height: 100%;
+    max-height: 70%;
+    box-sizing: border-box;
+    padding:2rem;
+    border-radius: var(--border-radius-box);
+  }
+  .decorationCompetitions {
+    display: none; /* Oculta decoraciones en móviles */
+  }
+}
