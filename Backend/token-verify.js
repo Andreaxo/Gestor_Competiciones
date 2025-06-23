@@ -1,8 +1,9 @@
 const jwt = require("jsonwebtoken");
 
 const secret = "cambiaravariabledeentorno";
+  //Aquí iría el secreto necesario del JWT.
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOiJleHBlcnRvIiwiaWF0IjoxNzQ3MDU5OTkwfQ.IlHNPq7dpjmFAYZLIc51In7F_uiw1pGbutmMcjLLFYs";
+  //Aquí iría el token necesario del JWT.
 
 function verifyToken(token, secret) {
   return jwt.verify(token, secret);
